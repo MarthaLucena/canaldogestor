@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RELATÓRIO DE PRODUTIVIDADE</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="/static/img/background.svg" alt="Background Image">
+        </div>
+        <div class="right">
+            <h1>RELATÓRIO DE PRODUTIVIDADE</h1>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="files">Escolher Ficheiros</label>
+                <input type="file" id="files" name="files[]" multiple><br>
+                <label for="download_option">Salvar como:</label>
+                <select id="download_option" name="download_option">
+                    <option value="csv">CSV</option>
+                    <option value="excel">Excel</option>
+                </select><br>
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
